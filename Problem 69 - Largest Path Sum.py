@@ -23,8 +23,7 @@ Improvements can be made to:
 - Discourage edge-hugging which this algorithm may be prone to due to 
   asymmetric triange column growth.
 - Search the possible paths for multiple rows ahead.
-
-
+  Searching n rows ahead increases the number of potential_paths by 3^n
 '''
 node=0
 path_sum=0
