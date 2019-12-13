@@ -15,6 +15,15 @@ for i in range(0,100):
         triangle[i][value] = values[value]
         
 #%%
+triangle_new = triangle
+for depth in range(98,-1,-1):
+    for node in range(0,depth+1):
+        if node==0:
+            new_val = np.max(
+                      triangle[depth+1][node],
+                      triangle[depth+1][node+1]))
+
+#%%
 '''
 The loop below is a simple pathfinding algorithm which simply checks one row
 ahead and assigns the maximum valued node in that row to be the new node value.
